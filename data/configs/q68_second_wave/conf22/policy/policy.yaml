@@ -1,0 +1,192 @@
+change_leisure_probability:
+  1:
+    end_time: 2020-10-31
+    leisure_poisson_parameters:
+      care_home_visits:
+        men:
+          0-100: 0.05
+        women:
+          0-100: 0.05
+      household_visits:
+        men:
+          0-64: 0.25
+          65-100: 0.125
+        women:
+          0-64: 0.25
+          65-100: 0.125
+    start_time: 2020-05-06
+  2:
+    end_time: 2020-12-01
+    leisure_poisson_parameters:
+      care_home_visits:
+        men:
+          0-100: 0.05
+        women:
+          0-100: 0.05
+      household_visits:
+        men:
+          0-64: 0.2
+          65-100: 0.2
+        women:
+          0-64: 0.2
+          65-100: 0.2
+    start_time: 2020-11-01
+  3:
+    end_time: 2021-02-28
+    leisure_poisson_parameters:
+      care_home_visits:
+        men:
+          0-100: 0.05
+        women:
+          0-100: 0.05
+      household_visits:
+        men:
+          0-64: 0.07
+          65-100: 0.07
+        women:
+          0-64: 0.07
+          65-100: 0.07
+    start_time: 2020-12-01
+  4:
+    end_time: 2020-03-31
+    leisure_poisson_parameters:
+      care_home_visits:
+        men:
+          0-100: 0.05
+        women:
+          0-100: 0.05
+      household_visits:
+        men:
+          0-64: 0.1
+          65-100: 0.1
+        women:
+          0-64: 0.1
+          65-100: 0.1
+    start_time: 2021-03-01
+close_companies:
+  1:
+    avoid_work_probability: 0.15
+    end_time: 2020-10-31
+    full_closure: false
+    furlough_probability: 0.04
+    key_probability: 0.19
+    start_time: 2020-07-01
+  2:
+    avoid_work_probability: 0.14
+    end_time: 2020-11-30
+    full_closure: false
+    furlough_probability: 0.2
+    key_probability: 0.19
+    start_time: 2020-11-01
+  3:
+    avoid_work_probability: 0.17
+    end_time: 2020-12-31
+    full_closure: false
+    furlough_probability: 0.34
+    key_probability: 0.19
+    start_time: 2020-12-01
+  4:
+    avoid_work_probability: 0.24
+    end_time: 2021-01-31
+    full_closure: false
+    furlough_probability: 0.34
+    key_probability: 0.19
+    start_time: 2021-01-01
+close_leisure_venue:
+  1:
+    end_time: 2021-03-01
+    start_time: 2020-10-28
+    venues_to_close:
+    - pub
+    - cinema
+    - care_home_visit
+    - gym
+close_schools:
+  1:
+    end_time: 2020-10-31
+    full_closure: false
+    start_time: 2020-10-26
+    years_to_close: all
+  2:
+    end_time: 2021-01-03
+    full_closure: true
+    start_time: 2020-12-13
+    years_to_close: all
+close_universities:
+  1:
+    end_time: 2021-03-01
+    start_time: 2020-12-13
+hospitalisation:
+  end_time: 9999-01-01
+  start_time: 1000-01-01
+limit_long_commute:
+  apply_from_distance: 2000
+  end_time: 9999-01-01
+  going_to_work_probability: 1.0
+  start_time: 1000-01-01
+quarantine:
+  1:
+    compliance: 0.95
+    end_time: 2020-03-22
+    household_compliance: 0.9
+    n_days: 14
+    n_days_household: 14
+    start_time: 2020-02-26
+  2:
+    compliance: 0.95
+    end_time: 2021-07-04
+    household_compliance: 0.9
+    n_days: 10
+    n_days_household: 14
+    start_time: 2020-03-22
+regional_compliance:
+  1:
+    compliances_per_region:
+      Baden-Wuerttemberg: 1.0
+      Bayern: 1.0
+      Berlin: 1.0
+      Brandenburg: 1.0
+      Bremen: 1.0
+      Hamburg: 1.0
+      Hessen: 1.0
+      Mecklenburg-Vorpommern: 1.0
+      Niedersachsen: 1.0
+      Nordrhein-Westfalen: 1.0
+      Rheinland-Pfalz: 1.0
+      Saarland: 1.0
+      Sachsen: 1.0
+      Sachsen-Anhalt: 1.0
+      Schleswig-Holstein: 1.0
+      Thueringen: 1.0
+    end_time: 9999-12-01
+    start_time: 1000-07-04
+severe_symptoms_stay_home:
+  end_time: 9999-01-01
+  start_time: 1000-01-01
+shielding:
+  1:
+    compliance: 0.5
+    end_time: 2021-03-01
+    min_age: 60
+    start_time: 2020-10-28
+tiered_lockdown:
+  1:
+    end_time: 9999-12-01
+    start_time: 2020-12-03
+    tiers_per_region:
+      Baden-Wuerttemberg: 1.0
+      Bayern: 1.0
+      Berlin: 1.0
+      Brandenburg: 1.0
+      Bremen: 1.0
+      Hamburg: 1.0
+      Hessen: 1.0
+      Mecklenburg-Vorpommern: 1.0
+      Niedersachsen: 1.0
+      Nordrhein-Westfalen: 1.0
+      Rheinland-Pfalz: 1.0
+      Saarland: 1.0
+      Sachsen: 1.0
+      Sachsen-Anhalt: 1.0
+      Schleswig-Holstein: 1.0
+      Thueringen: 1.0

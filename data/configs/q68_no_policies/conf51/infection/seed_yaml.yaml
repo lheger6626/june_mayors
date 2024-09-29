@@ -1,0 +1,4 @@
+max_date: '2020-10-04'
+min_date: '2020-10-01'
+path_to_csv: infection_seed/infektionen.csv
+seed_strength: 6.385903742644086
